@@ -1,0 +1,223 @@
+:root {
+    --purple: #3A1772;
+    --blue: #779BE7;
+    --pink: #F7567C;
+    --yellow: #FEC601;
+    --green: #68edc6;
+    --black: #202020;
+    --white: #fcfcfc;
+}
+
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Login Page */
+.login-container{
+    background-color: var(--white);
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 16px solid var(--blue);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.login-container form ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1em;
+    
+}
+
+.login-container form ul .login-register-text{
+    margin: 5px;
+    color: var(--black)
+}
+
+.login-container form ul .login-register-text a{
+    color: var(--blue);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.login-container form ul .login-register-text a:hover{
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.login-container form ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.login-container form ul li input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    font-size: 1.2rem;
+}
+
+.login-container form ul li label {
+    
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 16px;
+}
+
+.login-container form ul li button {
+    padding:5px 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1.4rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin: 10px auto;
+}
+
+.login-container form ul li button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* End Of Login Page */
+
+
+/* Home Page */
+.login-container .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-container .home-header .btn-logout {
+    padding:5px 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1.2rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.login-container .home-header .btn-logout:hover {
+    color: var(--white);
+    background-color: var(--black);
+    opacity: .9;
+    letter-spacing: 1px;
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-container .home-header .btn-create {
+    padding:5px 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1.2rem;
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.login-container .home-header .btn-create:hover {
+
+    opacity: .9;
+    letter-spacing: 1px;
+    transform: scale(1.005);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-container .search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.login-container .search-bar input {
+    padding:5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.login-container .search-bar button {
+    padding:5px 10px;
+    border-radius: 5px;
+    border:1px solid var(--purple);
+    font-size: 1.2rem;
+    background-color: var(--purple);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+
+
+.login-container table .action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.login-container table .btn-edit{
+    padding:5px 10px;
+    border-radius: 5px;
+    border:1px solid var(--yellow);
+    font-size: 1.2rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.login-container table .btn-delete {
+    padding:5px 10px;
+    border-radius: 5px;
+    border:1px solid var(--pink);
+    font-size: 1.2rem;
+    background-color: var(--pink);
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
