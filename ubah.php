@@ -42,43 +42,51 @@ if (isset($_POST["submit"])) {
 <html>
 
 <head>
-	<title>Ubah data mahasiswa</title>
+	<title>Edit Page</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h1>Ubah data mahasiswa</h1>
+	<div class="login-container">
+		<h1>Edit Product Details</h1>
 
-	<form action="" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="id" value="<?= $produkt["id"]; ?>">
-		<input type="hidden" name="gambarLama" value="<?= $produkt["image"]; ?>">
-		<ul>
-			<li>
-				<label for="name">Name : </label>
-				<input type="text" name="name" id="name" value="<?= $produkt["name"]; ?>">
-			</li>
-			<li>
-				<label for="price">Price :</label>
-				<input type="text" name="price" id="price" value="<?= $produkt["price"]; ?>">
-			</li>
-			<li>
-				<label for="stock">Stock :</label>
-				<input type="text" name="stock" id="stock" value="<?= $produkt["stock"]; ?>">
-			</li>
-			<li>
-				<label for="category">Category :</label>
-				<input type="text" name="category" id="category" value="<?= $produkt["category"]; ?>">
-			</li>
-			<li>
-				<label for="image">Image :</label> <br>
-				<img src="img/<?= $produkt['image']; ?>" width="40"> <br>
-				<input type="file" name="image" id="image">
-			</li>
-			<li>
-				<button type="submit" name="submit">Ubah Data!</button>
-			</li>
-		</ul>
+		<form action="" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="id" value="<?= $produkt["id"]; ?>">
+			<input type="hidden" name="gambarLama" value="<?= $produkt["image"]; ?>">
+			<ul>
+				<li>
+					<label for="name">Name : </label>
+					<input type="text" name="name" id="name" value="<?= $produkt["name"]; ?>">
+				</li>
+				<li>
+					<label for="price">Price :</label>
+					<input type="text" name="price" id="price" value="<?= $produkt["price"]; ?>">
+				</li>
+				<li>
+					<label for="stock">Stock :</label>
+					<input type="text" name="stock" id="stock" value="<?= $produkt["stock"]; ?>">
+				</li>
+				<li>
+					<label for="category">Category :</label>
+					<input type="text" name="category" id="category" value="<?= $produkt["category"]; ?>">
+				</li>
+				<li>
+					<label for="image">Image :</label> <br>
+					<div class="upload-img">
+						<div class="img-preview">
+							<img src="img/<?= $produkt['image']; ?>" width="260">
+						</div>
 
-	</form>
+						<input type="file" name="image" id="image">
+					</div>
+				</li>
+				<li>
+					<button type="submit" name="submit">Edit Product!</button>
+				</li>
+			</ul>
+
+		</form>
+	</div>
 
 
 
